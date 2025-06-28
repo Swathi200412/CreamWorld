@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cream World</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-ice-cream nav-icon"></i>
+                <span class="nav-title">Cream World</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="pages/products.html" class="nav-link">Menu</a>
+                <a href="pages/cart.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Cream World</span>
+                    <span class="title-line">Ice Cream</span>
+                </h1>
+                <p class="hero-subtitle">Magical flavors that make every moment sweeter</p>
+                <div class="hero-buttons">
+                    <a href="pages/products.html" class="btn btn-primary">
+                        <i class="fas fa-star"></i>
+                        Explore Flavors
+                    </a>
+                    <button class="btn btn-secondary" onclick="scrollToSection('featured')">
+                        <i class="fas fa-heart"></i>
+                        Featured
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="ice-cream-stack">
+                    <div class="scoop scoop-pink"></div>
+                    <div class="scoop scoop-blue"></div>
+                    <div class="scoop scoop-mint"></div>
+                    <div class="cone"></div>
+                </div>
+                <div class="floating-elements">
+                    <div class="float-element star">⭐</div>
+                    <div class="float-element heart">💖</div>
+                    <div class="float-element sparkle">✨</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search for your favorite flavors..." class="search-input">
+                </div>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i>
+                    Featured Flavors
+                </h2>
+                <p class="section-subtitle">Our most magical creations</p>
+            </div>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Featured products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-rainbow"></i>
+                    Flavor Categories
+                </h2>
+                <p class="section-subtitle">Discover your perfect match</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="fruity">
+                    <div class="category-icon">🍓</div>
+                    <h3 class="category-title">Fruity Fresh</h3>
+                    <p class="category-description">Bursting with natural fruit flavors</p>
+                </div>
+                <div class="category-card" data-category="chocolate">
+                    <div class="category-icon">🍫</div>
+                    <h3 class="category-title">Chocolate Dreams</h3>
+                    <p class="category-description">Rich and creamy chocolate varieties</p>
+                </div>
+                <div class="category-card" data-category="vanilla">
+                    <div class="category-icon">🌟</div>
+                    <h3 class="category-title">Vanilla Magic</h3>
+                    <p class="category-description">Classic vanilla with a twist</p>
+                </div>
+                <div class="category-card" data-category="special">
+                    <div class="category-icon">🦄</div>
+                    <h3 class="category-title">Unicorn Special</h3>
+                    <p class="category-description">Magical limited edition flavors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fas fa-ice-cream"></i>
+                        Cream World
+                    </h3>
+                    <p class="footer-text">Making every day sweeter with magical ice cream experiences</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/products.html">Menu</a></li>
+                        <li><a href="pages/cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cream World Ice Cream. Made with 💖 for ice cream lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
